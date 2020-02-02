@@ -5,12 +5,12 @@
     <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
-<header>
-  <nav>
-    <a href="index.html">
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="index.html">
       <img src="img/logo-small.svg" width="111" heith="24" alt="Логотип барбершопа «Бородинский»">
     </a>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="info.html">Информация</a></li>
       <li><a href="news.html">Новости</a>/li>
       <li><a href="price.html">Прайс-лист</a></li>
@@ -18,7 +18,11 @@
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="user-navigation">
-      <li><a class="login-link" href="img/login.svg">Вход</a></li>
+      <li>
+        <a class="login-link" href="login.html">
+          Вход
+         </a>
+        </li>
     </ul>
   </nav>
   <ul>
@@ -35,6 +39,23 @@
 <section class="filters">
   <h2>Фильтр товаров</h2>
 <!-- Здесь будет форма -->
+<h2>Группы товаров</h2>
+<form action="" method="post">
+<label>
+<input type="radio" name="product-group" value="Бритвенные принадлежности">
+</label>
+<br>
+<label>
+  <input type="radio" name="product-group" value="Средства для ухода">
+</label>
+  <br>
+<label>
+  <input type="radio" name="product-group" value="Аксессуары">
+</label>
+
+<input type="submit" value="Посмотреть">
+</form>
+
 </section>
 
 <section class="catalog">
@@ -161,10 +182,9 @@
 <div>
   <p>Давайте дружить!</p>
   <ul>
-    <li>
-      <a href="#"><img src="img/vk.svg">Вконтакте<a></li>
-    <li><a href="#"><img src="img/facebook.svg">Фейсбук</a></li>
-    <li><a href="#"><img src="img/instagram.svg">Инстаграм</a></li>
+    <li><a href="#"><img src="img/vk.svg" alt="Барбершоп «Бородинский» ВКонтакте">Вконтакте<a></li>
+    <li><a href="#"><img src="img/facebook.svg" alt="Барбершоп «Бородинский» в Фейсбуке">Фейсбук</a></li>
+    <li><a href="#"><img src="img/instagram.svg" alt="Барбершоп «Бородинский» в Инстаграме">Инстаграм</a></li>
   </ul>
 </div>
 <p>Разработано:
